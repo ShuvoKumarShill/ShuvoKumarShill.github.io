@@ -9,37 +9,60 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+EXPERIENCE
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
 
-Work experience
+* **Feb 2017 – Present: IT Support**
+  * *Gomti Computer & Technology, Dhaka*  
+  * Job Location: Ministry of Foreign Affairs, Dhaka  
+  * Managed network infrastructure (servers, routers, firewalls), ensuring 99.9% system uptime.  
+  * Provided technical support to over 300 clients, achieving a 95% first-resolution rate for IT issues.  
+  * Assisted users on the Bangladesh Government's e-file system, improving adoption rates by 30%.  
+  * Supported and managed 81 unified websites and MoFA digital platforms.  
+  * Oversaw archives, ensuring data organization and accessibility.  
+  * Maintained and optimized the Centralized Appointment and Tracking Systems.
+
+* **Apr 2016 – Dec 2017: System Support Engineer**
+  * *WITS BD, Dhaka*  
+  * Designed and optimized LAN/WAN networks using Cisco routers and switches to meet cost and performance targets.  
+  * Implemented a reliable backup system, safeguarding critical company data.
+
+---
+
+SKILLS
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Technical Skills**
+  * Python, SQL, Data Analytics  
+  * Network Administration (LAN/WAN, Firewalls)  
+  * Hardware & Software Troubleshooting  
+  * Cloud Computing (AWS, Google Cloud)  
+  * Backup and Disaster Recovery  
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+* **Soft Skills**
+  * Problem-solving  
+  * Communication  
+  * Attention to Detail  
+  * Teamwork and Collaboration  
+
+---
+
+EDUCATION
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+
+* **B.Sc. in Computer Science and Engineering**, Bangladesh University, Dhaka — *Graduated: 2021*  
+* **Diploma in Computer Engineering**, Faridpur Polytechnic Institute, Faridpur — *Graduated: 2016*
+
+---
+
+CERTIFICATES
+======
+
+* B.Sc. in Computer Science and Engineering  
+* Diploma in Computer Engineering  
+* Data Science & Machine Learning with Python — Ostad  
+* The Bits and Bytes of Computer Networking — Google (Coursera)  
+* Technical Support Fundamentals — Google (Coursera)
 
 Publications
 ======

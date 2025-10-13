@@ -25,7 +25,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Shuvo Kumar Shill" # Update this with your name
-  pronouns         : "He/Him" # example: "She/Her", "They/Them"
+  pronouns         : # example: "He/Him" "She/Her", "They/Them"
   bio              : "Lifelong Learner | Tech Blogger | Open Source Contributor | Passionate about AI & Machine Learning" # Update this with a short bio or description of yourself
   location         : "Earth"
   employer         : "Independent Researcher"
@@ -65,7 +65,7 @@ author:
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL
-  medium           : # URL
+  medium           : "shuvo-kumar-shill" # URL
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
