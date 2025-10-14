@@ -1,96 +1,104 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Shuvo Kumar Shill
+**IT Professional | System Support Engineer | Data Science Enthusiast**
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+Welcome to my academic and professional portfolio! I am a technology professional with expertise in IT support, system administration, and a growing passion for data science and machine learning.
 
-# Getting Started
+## About Me
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+I am an IT professional with extensive experience in network infrastructure management and technical support. Currently working as an IT Support specialist at the Ministry of Foreign Affairs, Dhaka, I specialize in:
 
-See more info at https://academicpages.github.io/
+- Network Infrastructure Management
+- Technical Support and Problem Resolution
+- Data Analytics and Machine Learning
+- System Administration
+- Cloud Computing
 
-## Running locally
+## Professional Experience
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+### IT Support (2017 - Present)
+**Gomti Computer & Technology, Ministry of Foreign Affairs, Dhaka**
+- Managing network infrastructure with 99.9% uptime
+- Supporting 300+ clients with 95% first-resolution rate
+- Maintaining government e-file systems and digital platforms
+- Managing unified websites and digital infrastructure
 
-1. Clone the repository and made updates as detailed above.
+### System Support Engineer (2016 - 2017)
+**WITS BD, Dhaka**
+- LAN/WAN network design and optimization
+- Implementation of backup systems
+- Technical infrastructure management
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+## Education & Certifications
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+### Education
+- B.Sc. in Computer Science and Engineering - Bangladesh University, Dhaka (2021)
+- Diploma in Computer Engineering - Faridpur Polytechnic Institute (2016)
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+### Certifications
+- Data Science & Machine Learning with Python (Ostad)
+- The Bits and Bytes of Computer Networking (Google/Coursera)
+- Technical Support Fundamentals (Google/Coursera)
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stoping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+## Technical Skills
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+### Core Competencies
+- Python Programming
+- SQL & Data Analytics
+- Network Administration
+- Cloud Computing (AWS, Google Cloud)
+- Hardware & Software Troubleshooting
 
-## Using Docker
+### Development Tools & Technologies
+### Programming Languages & Frameworks
+- Python
+- SQL
+- Shell Scripting
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+### Tools & Platforms
+- Git & GitHub
+- AWS & Google Cloud
+- Network Administration Tools
+- Backup & Recovery Systems
+- Monitoring & Analytics Tools
 
-You can build and execute the container by running the following command in the repository:
+## Connect With Me
 
-```bash
-chmod -R 777 .
-docker compose up
-```
+- 🌐 [Portfolio Website](https://shuvokumarshill.github.io)
+- 📚 [Google Scholar](https://scholar.google.com/citations?user=3jOMYs4AAAAJ&hl=en)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/shuvo-kumar-shill)
+- 🐦 [Twitter](https://twitter.com/ShuvoKumarShill)
+- ✍️ [Medium](https://shuvo-kumar-shill.medium.com)
+- 💻 [GitHub](https://github.com/shuvokumarshill)
+- 📊 [Kaggle](https://www.kaggle.com/shuvokumarshill)
+- 🎓 [ORCID](https://orcid.org/0009-0004-4166-891X)
 
-You should now be able to access the website from `localhost:4000`.
+## Projects & Contributions
 
-### Using the DevContainer in VS Code
+I'm passionate about technology and continuous learning. Some of my focus areas include:
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+- Network Infrastructure Optimization
+- Data Analysis and Visualization
+- Machine Learning Applications
+- Technical Documentation
+- System Administration
 
-# Maintenance
+## Looking Forward
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+I am constantly learning and expanding my skills in:
+- Advanced Data Science
+- Machine Learning
+- Cloud Architecture
+- DevOps Practices
+- Cybersecurity
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
+<div align="center">
+
+[![Website](https://img.shields.io/badge/Website-shuvokumarshill.github.io-blue)](https://shuvokumarshill.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Shuvo_Kumar_Shill-blue)](https://www.linkedin.com/in/shuvo-kumar-shill)
+[![Medium](https://img.shields.io/badge/Medium-Follow-black)](https://shuvo-kumar-shill.medium.com)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue)](https://twitter.com/ShuvoKumarShill)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0004--4166--891X-green)](https://orcid.org/0009-0004-4166-891X)
+
 </div>
