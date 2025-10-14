@@ -27,7 +27,7 @@ author:
   name             : "Shuvo Kumar Shill" # Update this with your name
   pronouns         : # example: "He/Him" "She/Her", "They/Them"
   bio              : "Lifelong Learner | Tech Blogger | Open Source Contributor | Passionate about AI & Machine Learning" # Update this with a short bio or description of yourself
-  location         : "Earth"
+  # location         : "Earth"
   employer         : "Independent Researcher"
   uri              : # URL
   email            : "shuvokumarshill@gmail.com" 
@@ -58,14 +58,14 @@ author:
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
-  goodreads        : # Username
+  goodreads        : "shuvokumarshill" # Username
   google_plus      : # Username
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "shuvo-kumar-shill" # Username
   mastodon         : # URL
-  medium           : "shuvo-kumar-shill" # URL
+  medium           : "https://shuvo-kumar-shill.medium.com/" # URL
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
