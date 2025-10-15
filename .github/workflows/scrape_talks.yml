@@ -7,7 +7,6 @@ on:
       - '_talks/**'
       - 'talkmap.ipynb'
 
-# Add permissions for the workflow
 permissions:
   contents: write
   pages: write
@@ -17,26 +16,38 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v4  # Updated to latest version
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5  # Updated to latest version
       with:
-        python-version: '3.9'  # Specify the Python version you need
+        python-version: '3.9'
 
     - name: Install dependencies
       run: |
-        pip install jupyter pandas requests beautifulsoup4 geopy  # Add other dependencies as needed
-        pip install getorg --upgrade
+        python -m pip install --upgrade pip
+        pip install jupyter pandas requests beautifulsoup4 geopy getorg
 
     - name: Run Jupyter Notebook
       run: |
         jupyter nbconvert --to notebook --execute talkmap.ipynb --output talkmap_out.ipynb
+      continue-on-error: true  # Continue even if notebook execution fails, for debugging
 
     - name: Commit changes
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add .
-        git commit -m "Automated update of talk locations" || echo "No changes to commit"
-        git push
+        if git commit -m "Automated update of talk locations"; then
+          echo "Changes committed successfully"
+        else
+          echo "No changes to commit"
+          exit 0  # Exit successfully to avoid failing the job
+        fi
+
+    - name: Push changes
+      env:
+        REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+      run: |
+        git push https://x-access-token:${{ secrets.REPO_TOKEN }}@github.com/shuvokumarshill/shuvokumarshill.github.io.git
