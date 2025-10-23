@@ -1,0 +1,47 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#person",
+      "name": "{{ site.author.name }}",
+      "jobTitle": "AI & Data Analytics Expert | System Support Engineer",
+      "image": "{{ site.url }}/images/{{ site.author.avatar }}",
+      "description": "{{ site.author.bio }}",
+      "sameAs": [
+        "https://github.com/{{ site.author.github }}",
+        "https://linkedin.com/in/{{ site.author.linkedin }}",
+        "https://twitter.com/{{ site.author.twitter }}",
+        "{{ site.author.googlescholar }}",
+        "https://medium.com/@{{ site.author.medium }}",
+        "{{ site.author.orcid }}"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Data Analytics",
+        "Cloud Computing",
+        "IT Infrastructure",
+        "System Administration",
+        "Network Security",
+        "Digital Transformation"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "{{ site.author.employer }}"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description }}",
+      "publisher": {
+        "@id": "{{ site.url }}/#person"
+      }
+    }
+  ]
+}
+</script>

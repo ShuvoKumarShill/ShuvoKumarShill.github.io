@@ -12,10 +12,9 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Shuvo Kumar Shill"
 title_separator          : "-"
 name                     : &name "Shuvo Kumar Shill" # Update this with your name, this is used in the title and author meta tag
-description              : &description "Shuvo Kumar Shill's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://shuvokumarshill.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+description              : &description "Shuvo Kumar Shill - AI & Data Analytics Expert | System Support Engineer specializing in innovative technological solutions, machine learning applications, and digital transformation. Experienced in IT infrastructure, cloud computing, and data science."
+url                      : https://shuvokumarshill.github.io
+baseurl                  : ""
 repository               : "ShuvoKumarShill/shuvokumarshill.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -26,10 +25,10 @@ author:
   avatar           : "profile.png"
   name             : "Shuvo Kumar Shill" # Update this with your name
   pronouns         : # example: "He/Him" "She/Her", "They/Them"
-  bio              : "Lifelong Learner | Tech Blogger | Open Source Contributor | Passionate about AI & Machine Learning" # Update this with a short bio or description of yourself
-  # location         : "Earth"
-  employer         : "Independent Researcher"
-  uri              : # URL
+  bio              : "AI & Data Analytics Expert | System Support Engineer | Technical Writer | Open Source Contributor | Specializing in Machine Learning & Cloud Infrastructure"
+  location         : "Dhaka, Bangladesh"
+  employer         : "Ministry of Foreign Affairs"
+  uri              : "https://shuvokumarshill.github.io"
   email            : "shuvokumarshill@gmail.com" 
 
   # Academic websites
@@ -128,20 +127,20 @@ atom_feed:
 
 # SEO Related
 google_site_verification : gIsn80QUIuQpKdmcayLuKRVHeJB3vNBo2cqY
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
+bing_site_verification   : # Add your Bing verification code
+alexa_site_verification  : # Add your Alexa verification code
+yandex_site_verification : # Add your Yandex verification code
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : "ShuvoKumarShill"
+  card                   : "summary_large_image"
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+  username               : # Add your Facebook username
+  app_id                 : # Add your Facebook app ID
+  publisher              : # Add your Facebook page URL
+og_image                 : "profile.png"  # Social media default site image
+og_description           : "Discover insights on AI, Data Analytics, Machine Learning, and Cloud Infrastructure from Shuvo Kumar Shill. Expert in digital transformation and innovative tech solutions."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

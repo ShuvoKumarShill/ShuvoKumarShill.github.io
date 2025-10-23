@@ -1,15 +1,27 @@
 ---
 permalink: /
-title: "About Me - Shuvo Kumar Shill"
+title: "Shuvo Kumar Shill - AI & Data Analytics Expert | System Support Engineer"
+description: "Expert in AI, Data Analytics, and System Engineering with 6+ years of experience in digital transformation and IT infrastructure optimization"
+keywords: "AI expert, Data Analytics, Machine Learning, Cloud Computing, System Administration, Digital Transformation"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Hello! I'm Shuvo Kumar Shill, an IT professional and system support engineer with a passion for technology, data science, and machine learning. With over 6 years of experience in IT infrastructure management and technical support, I specialize in building and maintaining robust network systems while exploring the frontiers of artificial intelligence and data analytics.
+# Innovating Through AI & Data Analytics
 
-Currently serving at the Ministry of Foreign Affairs in Dhaka, I bridge the gap between complex technical systems and user needs, ensuring seamless operation of critical government digital infrastructure. My role combines technical expertise with problem-solving skills, allowing me to maintain high-performance systems while facilitating digital transformation initiatives.
+Welcome! I'm **Shuvo Kumar Shill**, a seasoned IT professional and system support engineer specializing in artificial intelligence, data analytics, and digital transformation. With over 6 years of experience in IT infrastructure management and technical support, I combine cutting-edge technology expertise with practical problem-solving skills to deliver innovative solutions.
+
+## Current Role & Impact
+
+As a System Support Engineer at the Ministry of Foreign Affairs in Dhaka, I lead critical digital infrastructure initiatives that bridge the gap between complex technical systems and user needs. My work focuses on:
+
+- Implementing AI-driven solutions for process optimization
+- Developing data analytics frameworks for informed decision-making
+- Managing and securing mission-critical IT infrastructure
+- Spearheading digital transformation projects
+- Providing expert technical consultation and support
 
  Professional Journey
 ======
