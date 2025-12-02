@@ -1,0 +1,159 @@
+{% include base_path %}
+
+<section class="medium-posts">
+    <h2>✍️ Latest on Medium</h2>
+    <div id="medium-feed" class="medium-grid">
+        <p class="loading">Loading latest articles from Medium...</p>
+    </div>
+    <p class="view-all">
+        <a href="https://shuvo-kumar-shill.medium.com/" target="_blank" rel="noopener">Visit my Medium profile →</a>
+    </p>
+</section>
+
+<script>
+    // Fetch Medium RSS feed and display latest articles
+    (function () {
+        const mediumUsername = 'shuvo-kumar-shill';
+        const mediumRSSUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUsername}`;
+
+        fetch(mediumRSSUrl)
+            .then(response => response.json())
+            .then(data => {
+                const feedContainer = document.getElementById('medium-feed');
+
+                if (data.status === 'ok' && data.items && data.items.length > 0) {
+                    const articles = data.items.slice(0, 3); // Get latest 3 articles
+
+                    let html = '';
+                    articles.forEach(article => {
+                        const pubDate = new Date(article.pubDate);
+                        const formattedDate = pubDate.toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+
+                        // Extract excerpt from description
+                        const tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = article.description;
+                        const excerpt = tempDiv.textContent.substring(0, 150) + '...';
+
+                        html += `
+            <article class="medium-card">
+              <h3 class="medium-title">
+                <a href="${article.link}" target="_blank" rel="noopener">${article.title}</a>
+              </h3>
+              <p class="medium-meta">
+                <i class="fa fa-calendar" aria-hidden="true"></i> ${formattedDate}
+                <span class="medium-badge">Medium</span>
+              </p>
+              <p class="medium-excerpt">${excerpt}</p>
+              <a href="${article.link}" target="_blank" rel="noopener" class="read-on-medium">Read on Medium →</a>
+            </article>
+          `;
+                    });
+
+                    feedContainer.innerHTML = html;
+                } else {
+                    feedContainer.innerHTML = '<p class="error">Unable to load Medium articles. <a href="https://shuvo-kumar-shill.medium.com/" target="_blank" rel="noopener">Visit Medium profile</a></p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching Medium feed:', error);
+                document.getElementById('medium-feed').innerHTML = '<p class="error">Unable to load Medium articles. <a href="https://shuvo-kumar-shill.medium.com/" target="_blank" rel="noopener">Visit Medium profile</a></p>';
+            });
+    })();
+</script>
+
+<style>
+    .medium-posts {
+        margin: 2em 0;
+    }
+
+    .medium-posts h2 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 0.5em;
+    }
+
+    .medium-grid {
+        display: grid;
+        gap: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .loading,
+    .error {
+        text-align: center;
+        color: #666;
+        padding: 2em;
+        font-style: italic;
+    }
+
+    .error a {
+        color: #0066cc;
+        text-decoration: underline;
+    }
+
+    .medium-card {
+        padding: 1.5em;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+        transition: all 0.3s ease;
+    }
+
+    .medium-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .medium-title {
+        margin: 0 0 0.5em 0;
+        font-size: 1.2em;
+    }
+
+    .medium-title a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .medium-title a:hover {
+        color: #00ab6c;
+    }
+
+    .medium-meta {
+        color: #666;
+        font-size: 0.9em;
+        margin: 0.5em 0;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .medium-badge {
+        background: #00ab6c;
+        color: white;
+        padding: 0.2em 0.6em;
+        border-radius: 4px;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+
+    .medium-excerpt {
+        color: #555;
+        line-height: 1.6;
+        margin: 1em 0;
+    }
+
+    .read-on-medium {
+        color: #00ab6c;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .read-on-medium:hover {
+        text-decoration: underline;
+    }
+</style>

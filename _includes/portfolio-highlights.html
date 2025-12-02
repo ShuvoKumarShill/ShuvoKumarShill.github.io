@@ -1,0 +1,106 @@
+{% include base_path %}
+
+<section class="portfolio-highlights">
+    <h2>💼 Featured Projects</h2>
+    <div class="portfolio-grid">
+        {% assign featured_projects = site.portfolio | limit: 3 %}
+        {% for project in featured_projects %}
+        <article class="portfolio-card">
+            <h3 class="portfolio-title">
+                <a href="{{ base_path }}{{ project.url }}" rel="permalink">{{ project.title }}</a>
+            </h3>
+            {% if project.excerpt %}
+            <p class="portfolio-excerpt">{{ project.excerpt | markdownify | strip_html | truncatewords: 30 }}</p>
+            {% endif %}
+            <a href="{{ base_path }}{{ project.url }}" class="view-project">View project →</a>
+        </article>
+        {% endfor %}
+    </div>
+    <p class="view-all">
+        <a href="{{ base_path }}/portfolio/">View all projects →</a>
+    </p>
+</section>
+
+<style>
+    .portfolio-highlights {
+        margin: 2em 0;
+    }
+
+    .portfolio-highlights h2 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 0.5em;
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .portfolio-card {
+        padding: 1.5em;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        background: #ffffff;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .portfolio-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, #0066cc, #00cc99);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .portfolio-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    .portfolio-card:hover {
+        border-color: #0066cc;
+        box-shadow: 0 8px 20px rgba(0, 102, 204, 0.15);
+        transform: translateY(-4px);
+    }
+
+    .portfolio-title {
+        margin: 0 0 0.5em 0;
+        font-size: 1.2em;
+    }
+
+    .portfolio-title a {
+        text-decoration: none;
+        color: #2c3e50;
+    }
+
+    .portfolio-title a:hover {
+        color: #0066cc;
+    }
+
+    .portfolio-excerpt {
+        color: #555;
+        line-height: 1.6;
+        margin: 1em 0;
+    }
+
+    .view-project {
+        color: #0066cc;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-block;
+        margin-top: 0.5em;
+    }
+
+    .view-project:hover {
+        text-decoration: underline;
+    }
+</style>

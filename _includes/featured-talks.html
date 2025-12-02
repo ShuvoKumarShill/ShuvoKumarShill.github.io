@@ -1,0 +1,104 @@
+{% include base_path %}
+
+<section class="featured-talks">
+    <h2>🎤 Recent Talks & Presentations</h2>
+    <div class="talks-grid">
+        {% assign recent_talks = site.talks | sort: 'date' | reverse | limit: 2 %}
+        {% for talk in recent_talks %}
+        <article class="talk-card">
+            <h3 class="talk-title">
+                <a href="{{ base_path }}{{ talk.url }}" rel="permalink">{{ talk.title }}</a>
+            </h3>
+            <p class="talk-meta">
+                {% if talk.venue %}
+                <i class="fa fa-building" aria-hidden="true"></i> {{ talk.venue }}
+                {% endif %}
+                {% if talk.location %}
+                <br><i class="fa fa-map-marker" aria-hidden="true"></i> {{ talk.location }}
+                {% endif %}
+                {% if talk.date %}
+                <br><i class="fa fa-calendar" aria-hidden="true"></i> {{ talk.date | date: "%B %d, %Y" }}
+                {% endif %}
+            </p>
+            {% if talk.excerpt %}
+            <p class="talk-excerpt">{{ talk.excerpt | markdownify | strip_html | truncatewords: 25 }}</p>
+            {% endif %}
+            <a href="{{ base_path }}{{ talk.url }}" class="view-details">View details →</a>
+        </article>
+        {% endfor %}
+    </div>
+    <p class="view-all">
+        <a href="{{ base_path }}/talks/">View all talks →</a>
+    </p>
+</section>
+
+<style>
+    .featured-talks {
+        margin: 2em 0;
+    }
+
+    .featured-talks h2 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 0.5em;
+    }
+
+    .talks-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .talk-card {
+        padding: 1.5em;
+        border-left: 4px solid #0066cc;
+        background: #f8f9fa;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .talk-card:hover {
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: translateX(4px);
+    }
+
+    .talk-title {
+        margin: 0 0 0.5em 0;
+        font-size: 1.2em;
+    }
+
+    .talk-title a {
+        text-decoration: none;
+        color: #2c3e50;
+    }
+
+    .talk-title a:hover {
+        color: #0066cc;
+    }
+
+    .talk-meta {
+        color: #555;
+        font-size: 0.9em;
+        margin: 1em 0;
+        line-height: 1.8;
+    }
+
+    .talk-excerpt {
+        color: #555;
+        line-height: 1.6;
+        margin: 1em 0;
+    }
+
+    .view-details {
+        color: #0066cc;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .view-details:hover {
+        text-decoration: underline;
+    }
+</style>

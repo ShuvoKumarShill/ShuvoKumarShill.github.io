@@ -1,0 +1,105 @@
+{% include base_path %}
+
+<section class="recent-teaching">
+    <h2>🎓 Recent Teaching & Workshops</h2>
+    <div class="teaching-grid">
+        {% assign recent_teaching = site.teaching | sort: 'date' | reverse | limit: 2 %}
+        {% for course in recent_teaching %}
+        <article class="teaching-card">
+            <h3 class="teaching-title">
+                <a href="{{ base_path }}{{ course.url }}" rel="permalink">{{ course.title }}</a>
+            </h3>
+            <p class="teaching-meta">
+                <strong>{{ course.type }}</strong>
+                {% if course.venue %}
+                <br><i class="fa fa-map-marker" aria-hidden="true"></i> {{ course.venue }}
+                {% endif %}
+                {% if course.date %}
+                <br><i class="fa fa-calendar" aria-hidden="true"></i> {{ course.date | date: "%B %Y" }}
+                {% endif %}
+            </p>
+            {% if course.excerpt %}
+            <p class="teaching-excerpt">{{ course.excerpt | markdownify | strip_html | truncatewords: 25 }}</p>
+            {% endif %}
+            <a href="{{ base_path }}{{ course.url }}" class="learn-more">Learn more →</a>
+        </article>
+        {% endfor %}
+    </div>
+    <p class="view-all">
+        <a href="{{ base_path }}/teaching/">View all teaching activities →</a>
+    </p>
+</section>
+
+<style>
+    .recent-teaching {
+        margin: 2em 0;
+    }
+
+    .recent-teaching h2 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 0.5em;
+    }
+
+    .teaching-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .teaching-card {
+        padding: 1.5em;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        transition: all 0.3s ease;
+    }
+
+    .teaching-card:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .teaching-title {
+        margin: 0 0 0.5em 0;
+        font-size: 1.2em;
+    }
+
+    .teaching-title a {
+        text-decoration: none;
+        color: #2c3e50;
+    }
+
+    .teaching-title a:hover {
+        color: #0066cc;
+    }
+
+    .teaching-meta {
+        color: #555;
+        font-size: 0.9em;
+        margin: 1em 0;
+        line-height: 1.6;
+    }
+
+    .teaching-meta strong {
+        color: #0066cc;
+    }
+
+    .teaching-excerpt {
+        color: #555;
+        line-height: 1.6;
+        margin: 1em 0;
+    }
+
+    .learn-more {
+        color: #0066cc;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .learn-more:hover {
+        text-decoration: underline;
+    }
+</style>

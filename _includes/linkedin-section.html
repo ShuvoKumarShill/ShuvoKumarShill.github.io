@@ -1,0 +1,111 @@
+{% include base_path %}
+
+<section class="linkedin-section">
+    <h2>💼 Connect on LinkedIn</h2>
+    <div class="linkedin-content">
+        <div class="linkedin-profile">
+            <p>Follow my professional journey and connect with me on LinkedIn for:</p>
+            <ul>
+                <li>Industry insights and thought leadership</li>
+                <li>Professional updates and achievements</li>
+                <li>Networking opportunities</li>
+                <li>Career milestones and projects</li>
+            </ul>
+            <a href="https://www.linkedin.com/in/shuvo-kumar-shill" target="_blank" rel="noopener"
+                class="linkedin-button">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i> Follow on LinkedIn
+            </a>
+        </div>
+
+        <div class="linkedin-embed">
+            <div class="linkedin-badge-container">
+                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer
+                    type="text/javascript"></script>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light"
+                    data-type="VERTICAL" data-vanity="shuvo-kumar-shill" data-version="v1">
+                    <a class="badge-base__link LI-simple-link"
+                        href="https://www.linkedin.com/in/shuvo-kumar-shill?trk=profile-badge" target="_blank"
+                        rel="noopener">Shuvo Kumar Shill</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .linkedin-section {
+        margin: 2em 0;
+        padding: 2em;
+        background: linear-gradient(135deg, #f3f6f9 0%, #ffffff 100%);
+        border-radius: 12px;
+        border: 1px solid #e0e0e0;
+    }
+
+    .linkedin-section h2 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        color: #0077b5;
+    }
+
+    .linkedin-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        .linkedin-content {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .linkedin-profile p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 1em;
+    }
+
+    .linkedin-profile ul {
+        color: #555;
+        line-height: 1.8;
+        margin: 1em 0 1.5em 1.5em;
+    }
+
+    .linkedin-profile li {
+        margin-bottom: 0.5em;
+    }
+
+    .linkedin-button {
+        display: inline-block;
+        background: #0077b5;
+        color: white;
+        padding: 0.75em 1.5em;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 119, 181, 0.3);
+    }
+
+    .linkedin-button:hover {
+        background: #006399;
+        box-shadow: 0 4px 12px rgba(0, 119, 181, 0.4);
+        transform: translateY(-2px);
+    }
+
+    .linkedin-button i {
+        margin-right: 0.5em;
+        font-size: 1.2em;
+    }
+
+    .linkedin-embed {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linkedin-badge-container {
+        max-width: 100%;
+    }
+</style>
