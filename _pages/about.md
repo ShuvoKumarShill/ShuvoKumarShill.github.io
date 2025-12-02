@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Shuvo Kumar Shill - AI & Data Analytics Expert | System Support Engineer"
+title: "Shuvo Kumar Shill - AI & Data Analytics Specialist"
 description: "Expert in AI, Data Analytics, and System Engineering with 6+ years of experience in digital transformation and IT infrastructure optimization"
 keywords: "AI expert, Data Analytics, Machine Learning, Cloud Computing, System Administration, Digital Transformation"
 author_profile: true
@@ -223,3 +223,87 @@ Feel free to reach out via [email](mailto:shuvokumarshill@gmail.com) or connect 
 ---
 
 *"Transforming complex technical challenges into elegant, scalable solutions."*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Shuvo Kumar Shill",
+  "givenName": "Shuvo Kumar",
+  "familyName": "Shill",
+  "jobTitle": "System Support Engineer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Ministry of Foreign Affairs",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dhaka",
+      "addressCountry": "Bangladesh"
+    }
+  },
+  "url": "https://shuvokumarshill.github.io",
+  "email": "shuvokumarshill@gmail.com",
+  "image": "https://shuvokumarshill.github.io/images/profile.png",
+  "sameAs": [
+    "https://www.linkedin.com/in/shuvo-kumar-shill",
+    "https://github.com/shuvokumarshill",
+    "https://scholar.google.com/citations?user=3jOMYs4AAAAJ&hl=en",
+    "https://orcid.org/0009-0004-4166-891X",
+    "https://shuvo-kumar-shill.medium.com",
+    "https://twitter.com/ShuvoKumarShill",
+    "https://www.kaggle.com/shuvokumarshill"
+  ],
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "value": "0009-0004-4166-891X",
+      "url": "https://orcid.org/0009-0004-4166-891X"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Google Scholar",
+      "value": "3jOMYs4AAAAJ",
+      "url": "https://scholar.google.com/citations?user=3jOMYs4AAAAJ&hl=en"
+    }
+  ],
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "Bangladesh University",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dhaka",
+        "addressCountry": "Bangladesh"
+      }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Faridpur Polytechnic Institute",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Faridpur",
+        "addressCountry": "Bangladesh"
+      }
+    }
+  ],
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Data Analytics",
+    "Cloud Computing",
+    "System Administration",
+    "Network Infrastructure",
+    "Digital Transformation",
+    "DevOps",
+    "Python Programming",
+    "Data Science"
+  ],
+  "description": "AI & Data Analytics Specialist with 6+ years of experience in digital transformation and IT infrastructure optimization. Expert in machine learning, cloud computing, and enterprise system engineering.",
+  "award": [
+    "99.9% uptime achievement for critical government infrastructure",
+    "40% incident response time reduction through predictive analytics",
+    "30% cloud resource cost optimization"
+  ]
+}
+</script>
