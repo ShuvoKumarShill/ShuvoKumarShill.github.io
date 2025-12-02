@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://shuvokumarshill.github.io/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_*
+
+# Allow search engines to crawl all public content
+Allow: /publications/
+Allow: /talks/
+Allow: /teaching/
+Allow: /portfolio/
+Allow: /posts/
+Allow: /year-archive/
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1
