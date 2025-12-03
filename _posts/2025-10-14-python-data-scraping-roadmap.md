@@ -1,5 +1,5 @@
 ---
-title: '7-Day Python Data Scraping Roadmap: PhD Scholar's Guide (Beginner to Advanced)'
+title: "7-Day Python Data Scraping Roadmap: PhD Scholar's Guide (Beginner to Advanced)"
 date: 2025-10-14
 permalink: /posts/2025/10/python-data-scraping-roadmap/
 tags:
